@@ -1,5 +1,7 @@
 package week2;
 
+import java.util.Scanner;
+
 public class munje3 {
 
 
@@ -56,9 +58,16 @@ public class munje3 {
     }
 
     private void solution() {
-        init(true);  //1번 문제
+        //init(true);  //1번 문제
         //init(false);   //2번 문제
         //2가 1을 잡으면됨 중간에 3이있으면 아웃 재귀사용하기
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0 ; i < chessWidth; i++){
+            for(int j = 0; j <chessWidth; j++){
+                chessPan[i][j] = sc.nextInt();
+            }
+        }
+
         for(int i = 0; i < chessWidth; i++){
             for(int j = 0; j < chessWidth; j++){
                 //체스판만큼 리롤 시작

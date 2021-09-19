@@ -10,7 +10,7 @@ public class munje1 {
         https://www.acmicpc.net/problem/2609
 
     문제 :
-          두 개의 자연수를 입력받아 최대 공약수와 최소 공배수를 출력하는 프로그램을 작성하시오.
+        두 개의 자연수를 입력받아 최대 공약수와 최소 공배수를 출력하는 프로그램을 작성하시오.
     입력 :
         첫째 줄에는 두 개의 자연수가 주어진다. 이 둘은 10,000이하의 자연수이며 사이에 한 칸의 공백이 주어진다.
     출력 :
@@ -48,9 +48,11 @@ public class munje1 {
         }
 
         int ans1 = gcd(num1, num2);
+
         num1 = num1 / ans1;
         num2 = num2 / ans1;
 
+        //최소 공배수
         int ans2 = num1 * num2 * ans1;
 
         System.out.println(ans1);

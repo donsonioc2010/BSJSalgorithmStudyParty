@@ -51,7 +51,7 @@ public class munje2 {
         }
 
         int colorPaperNum = sc.nextInt();
-
+        //IndexTree 접수
         if(colorPaperNum <= 100){       //100개 이하 validation
             for(int i = 0; i < colorPaperNum; i++){
                 int num1 = sc.nextInt(); // 종이의 왼쪽 변과 도화지의 왼쪽 변 사이의 거리
