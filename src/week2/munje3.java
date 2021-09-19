@@ -79,7 +79,7 @@ public class munje3 {
     }
     private boolean sero(int num1, int num2, String mark){
         //x값 증가
-        if(num1 >= 8 || num1 < 0 ) {
+        if(num1 >= 8 || num1 < 0 || chessPan[num1][num2]==3) {
             return false;
         }else if(chessPan[num1][num2] == 1) {
             return true;
@@ -107,7 +107,6 @@ public class munje3 {
     }
 
     private void init(boolean sel){
-        System.out.println("sel : " + sel);
         if(sel){// 1번 문제
             chessPan = new int[][]{
                     {0, 3, 0, 0, 0, 0, 0, 0},
